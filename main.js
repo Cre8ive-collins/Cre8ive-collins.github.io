@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	 
-	let text = ['A FULL-STACK DEVELOPER',
-    	'A DIGITAL MARKETER','MOTIVATED', 'PASSIONATE', 'TALENTED', 'DEDICATED', 'CRE8IVE'];
+	let text = ['A WEB DEVELOPER','MOTIVATED', 'PASSIONATE', 'TALENTED', 'DEDICATED', 'CRE8IVE'];
     let count = 0;
     let index = 0;
     let currentText = 0;
