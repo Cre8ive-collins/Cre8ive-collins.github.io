@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	 
-	let text = ['A WEB DEVELOPER','MOTIVATED', 'PASSIONATE', 'TALENTED', 'DEDICATED', 'CRE8IVE'];
+	let text = ['A WEB DEVELOPER','A DIGITAL MARKETER', 'PASSIONATE', 'TALENTED', 'MOTIVATED', 'CRE8IVE'];
     let count = 0;
     let index = 0;
     let currentText = 0;
@@ -17,6 +17,6 @@ $(document).ready(function(){
     		count++;
     		index = 0;
     	}
-    setTimeout(type , 1500)}())
+    setTimeout(type , 2000)}())
 
 });

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+
+body{
+    padding: 0;
+    background-color:black;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background{
+    width: 100%;
+    height: 80vh;
+    background-image: url("collins2.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(4, 4, 4, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.leadin{
+	font-size: 6vw;
+}
+
+.leadin2{
+	font-size: 2vw;
+}
+
+.top-text{
+    margin-top: 10rem;
+}
+
+h1{
+    font-family: 'Aclonica';
+}
+.about{
+	/* margin-top: px;; */
+	font-family: 'Playfair Display', serif;
+	text-decoration-line: overline;
+  	text-decoration-style: wavy;
+  	text-decoration-color:  #0275d8;
+}
+
+
+.icon-3d {
+    padding: 10px;
+    -webkit-animation: icon3d 200ms 10;
+    animation: icon3d 200ms 10;
+    color: #fff;
+  }
+  .icon-3d:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+  }
+  
+  @keyframes icon3d {
+    0% {
+      text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+    }
+    25% {
+      text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+    }
+    50% {
+      text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+    }
+    75% {
+      text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+    }
+    100% {
+      text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .background{
+        height: 50vh;  } 
+}
