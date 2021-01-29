@@ -17,6 +17,7 @@ $(document).ready(function(){
     		count++;
     		index = 0;
     	}
-    setTimeout(type , 2000)}())
+	setTimeout(type , 2000)}())
+
 
 });
