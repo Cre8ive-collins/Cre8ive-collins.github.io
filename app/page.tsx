@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
+import { RotatingRole } from "@/components/rotating-role";
 import { experience, toolkit } from "@/data/experience";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
@@ -18,7 +18,7 @@ export default function Home() {
       <section className="hero shell" id="home">
         <div className="hero-content">
           <p className="hero-name">Collins Wilson</p>
-          <h1>Product<br /><span>Engineer.</span></h1>
+          <h1><RotatingRole /></h1>
           <p className="hero-copy">
             I build digital products from idea to production — across web, mobile, APIs, backend systems and third-party integrations.
           </p>
@@ -121,14 +121,22 @@ export default function Home() {
 
       <section className="contact-section" id="contact">
         <div className="shell contact-layout">
-          <p className="section-label">Contact</p>
-          <h2>Let’s build<br />something <em>useful.</em></h2>
-          <p>I’m open to product engineering opportunities, interesting software problems and conversations with teams building meaningful products.</p>
-          <a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <span aria-hidden="true">↗</span></a>
-          <div className="contact-links">
-            <a href={profile.socials.linkedIn} target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href={profile.socials.github} target="_blank" rel="noreferrer">GitHub ↗</a>
-            <Link href="/#work">Selected work ↑</Link>
+          <div className="contact-intro">
+            <p className="section-label">Contact</p>
+            <h2>Have a product<br /><em>worth building?</em></h2>
+            <p>If you’re working through a product idea, a difficult engineering problem or the next stage of an existing platform, let’s talk.</p>
+          </div>
+          <div className="contact-card">
+            <p>Start a conversation</p>
+            <a className="contact-email" href={`mailto:${profile.email}`}>
+              <span>Email me</span>
+              <strong>{profile.email}</strong>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <div className="contact-links">
+              <a href={profile.socials.linkedIn} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href={profile.socials.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,14 @@
 export const experience = [
   {
+    company: "Technology IQ",
+    role: "Product Engineer",
+    dates: "2023 — Present",
+    industry: "Technology · Software products",
+    description:
+      "Working across product requirements and software delivery to turn practical product needs into maintainable digital experiences.",
+    focus: ["Product engineering", "Product development", "Software delivery"],
+  },
+  {
     company: "Sterling Bank",
     role: "Senior Frontend Engineer",
     dates: "June 2022 — Present",
