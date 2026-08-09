@@ -17,7 +17,7 @@ export default function Home() {
     <main id="main-content">
       <section className="hero shell" id="home">
         <div className="hero-content">
-          <p className="eyebrow hero-eyebrow"><span className="availability-dot" /> Collins Wilson · Available for global opportunities</p>
+          <p className="hero-name">Collins Wilson</p>
           <h1>Product<br /><span>Engineer.</span></h1>
           <p className="hero-copy">
             I build digital products from idea to production — across web, mobile, APIs, backend systems and third-party integrations.
@@ -33,7 +33,7 @@ export default function Home() {
 
       <section className="section shell" id="work">
         <div className="section-heading">
-          <p className="section-number">01 / Selected work</p>
+          <p className="section-label">Featured products</p>
           <div>
             <h2>Products, not<br />just projects.</h2>
             <p>Selected work across personal products, SaaS, marketplaces and mobile applications.</p>
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="shell fintech-layout">
           <div className="fintech-stat"><strong>4+</strong><span>years building<br />in fintech</span></div>
           <div className="fintech-copy">
-            <p className="section-number">02 / Industry depth</p>
+            <p className="section-label">Industry experience</p>
             <h2 id="fintech-title">Financial products demand more from engineering.</h2>
             <p>For more than four years, I’ve worked on digital banking and payment products where reliability, transaction accuracy and system integration are fundamental product requirements.</p>
             <div className="company-proof"><span>Sterling Bank</span><span>Digital banking · Financial products</span></div>
@@ -63,7 +63,7 @@ export default function Home() {
 
       <section className="section shell" id="approach">
         <div className="section-heading compact-heading">
-          <p className="section-number">03 / How I build</p>
+          <p className="section-label">Product process</p>
           <div><h2>From ambiguity<br />to production.</h2></div>
         </div>
         <ol className="process-grid">
@@ -77,7 +77,7 @@ export default function Home() {
 
       <section className="section shell" id="experience">
         <div className="section-heading compact-heading">
-          <p className="section-number">04 / Experience</p>
+          <p className="section-label">Professional experience</p>
           <div><h2>Where I’ve<br />built.</h2></div>
         </div>
         <div className="experience-list">
@@ -94,7 +94,7 @@ export default function Home() {
       <section className="toolkit-section">
         <div className="shell">
           <div className="section-heading compact-heading">
-            <p className="section-number">05 / Technical toolkit</p>
+            <p className="section-label">Technical capabilities</p>
             <div><h2>Tools follow<br />the problem.</h2><p>Technology supports the product story. It doesn’t replace it.</p></div>
           </div>
           <div className="toolkit-grid">
@@ -110,7 +110,7 @@ export default function Home() {
           <img src="/images/profile/collins-wilson.jpg" alt="Collins Wilson" loading="lazy" />
         </div>
         <div className="about-copy">
-          <p className="section-number">06 / About</p>
+          <p className="section-label">About me</p>
           <h2>Building beyond<br />the interface.</h2>
           <p>I’m a Product Engineer with more than six years of experience turning product and business requirements into software people can actually use.</p>
           <p>My foundation is deeply rooted in frontend development, but my work increasingly extends across the entire product lifecycle — from shaping requirements and designing application architecture to building interfaces, APIs, integrations and production systems.</p>
@@ -121,7 +121,7 @@ export default function Home() {
 
       <section className="contact-section" id="contact">
         <div className="shell contact-layout">
-          <p className="section-number">07 / Contact</p>
+          <p className="section-label">Contact</p>
           <h2>Let’s build<br />something <em>useful.</em></h2>
           <p>I’m open to product engineering opportunities, interesting software problems and conversations with teams building meaningful products.</p>
           <a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <span aria-hidden="true">↗</span></a>

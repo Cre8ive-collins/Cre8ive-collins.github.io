@@ -32,7 +32,7 @@ export const projects: Project[] = [
     eyebrow: "Money planner · iOS + Android",
     shortDescription:
       "A personal money-planning app that helps people organise recurring financial commitments and understand their monthly spending.",
-    role: "Creator / Product Engineer",
+    role: "Product Engineer",
     status: "live",
     statusLabel: "Available on iOS & Android",
     categories: ["Fintech", "Mobile"],
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     eyebrow: "Marketplace · E-commerce",
     shortDescription:
       "A fashion marketplace experience bringing designers, products and customer journeys together in a responsive commerce platform.",
-    role: "Product Engineering Contributor",
+    role: "Full Stack Software Engineer",
     status: "live",
     statusLabel: "Live product",
     categories: ["Marketplace", "E-commerce"],
