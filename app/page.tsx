@@ -31,6 +31,20 @@ export default function Home() {
         <p className="scroll-note" aria-hidden="true">Scroll to explore <span>↓</span></p>
       </section>
 
+      <section className="section shell about-section" id="about">
+        <div className="about-image-wrap">
+          <img src="/images/profile/collins-wilson.jpg" alt="Collins Wilson" loading="lazy" />
+        </div>
+        <div className="about-copy">
+          <p className="section-label">About me</p>
+          <h2>Building beyond<br />the interface.</h2>
+          <p>I’m a Product Engineer with more than six years of experience turning product and business requirements into software people can actually use.</p>
+          <p>My foundation is deeply rooted in frontend development, but my work increasingly extends across the entire product lifecycle — from shaping requirements and designing application architecture to building interfaces, APIs, integrations and production systems.</p>
+          <p>I think beyond the ticket: why we’re building something, how it fits into the wider product, which trade-offs we’re making and how it evolves after release.</p>
+          <a className="text-link" href={profile.cvUrl} target="_blank" rel="noreferrer">Download my CV <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
       <section className="section shell" id="work">
         <div className="section-heading">
           <p className="section-label">Featured products</p>
@@ -102,20 +116,6 @@ export default function Home() {
               <div key={group.title}><h3>{group.title}</h3><p>{group.items.join(" · ")}</p></div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section shell about-section" id="about">
-        <div className="about-image-wrap">
-          <img src="/images/profile/collins-wilson.jpg" alt="Collins Wilson" loading="lazy" />
-        </div>
-        <div className="about-copy">
-          <p className="section-label">About me</p>
-          <h2>Building beyond<br />the interface.</h2>
-          <p>I’m a Product Engineer with more than six years of experience turning product and business requirements into software people can actually use.</p>
-          <p>My foundation is deeply rooted in frontend development, but my work increasingly extends across the entire product lifecycle — from shaping requirements and designing application architecture to building interfaces, APIs, integrations and production systems.</p>
-          <p>I think beyond the ticket: why we’re building something, how it fits into the wider product, which trade-offs we’re making and how it evolves after release.</p>
-          <a className="text-link" href={profile.cvUrl} target="_blank" rel="noreferrer">Download my CV <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
