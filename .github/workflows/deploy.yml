@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/portfolio-web:latest
+          tags: ghcr.io/cre8ive-collins/portfolio-web:latest
 
       - name: Deploy to Contabo
         uses: appleboy/ssh-action@v1
@@ -39,11 +39,11 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
-            docker pull ghcr.io/${{ github.repository_owner }}/portfolio-web:latest
+            docker pull ghcr.io/cre8ive-collins/portfolio-web:latest
             docker stop portfolio-web || true
             docker rm portfolio-web || true
             docker run -d \
               --name portfolio-web \
               -p 127.0.0.1:3000:3000 \
               --restart unless-stopped \
-              ghcr.io/${{ github.repository_owner }}/portfolio-web:latest
+              ghcr.io/cre8ive-collins/portfolio-web:latest
