@@ -1,1 +1,9 @@
-/mail
+node_modules/
+.next/
+dist/
+.wrangler/
+.DS_Store
+*.log
+*.tsbuildinfo
+.env*
+!.env.example
