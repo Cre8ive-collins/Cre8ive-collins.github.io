@@ -16,6 +16,12 @@ export default function Home() {
   return (
     <main id="main-content">
       <section className="hero shell" id="home">
+        <div className="hero-orbit" aria-hidden="true">
+          <span className="hero-orbit-ring hero-orbit-ring-outer"><i /></span>
+          <span className="hero-orbit-ring hero-orbit-ring-middle"><i /></span>
+          <span className="hero-orbit-ring hero-orbit-ring-inner"><i /></span>
+          <span className="hero-orbit-core" />
+        </div>
         <div className="hero-content">
           <p className="hero-name">Collins Wilson</p>
           <h1><RotatingRole /></h1>
