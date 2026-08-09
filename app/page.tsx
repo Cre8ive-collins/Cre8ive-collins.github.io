@@ -120,43 +120,35 @@ export default function Home() {
       </section>
 
       <section className="contact-section" id="contact">
-        <div className="shell contact-shell">
-          <div className="contact-heading">
-            <p className="section-label">Contact</p>
-            <h2>Let’s build something useful.</h2>
-            <p>If you’re working through a product idea, a difficult engineering problem or the next stage of an existing platform, choose the channel that works best for you.</p>
-          </div>
-          <div className="contact-grid">
-            <a className="contact-channel contact-channel-primary" href={`mailto:${profile.email}`}>
-              <span className="contact-channel-label">Primary · Email</span>
-              <strong>{profile.email}</strong>
-              <span className="contact-channel-note">Tell me what you’re building</span>
-              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a className="contact-channel" href={profile.socials.whatsapp} target="_blank" rel="noreferrer">
-              <span className="contact-channel-label">Direct message</span>
-              <strong>WhatsApp</strong>
-              <span className="contact-channel-note">Start a conversation</span>
-              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a className="contact-channel" href={profile.socials.twitter} target="_blank" rel="noreferrer">
-              <span className="contact-channel-label">Social</span>
-              <strong>X / Twitter</strong>
-              <span className="contact-channel-note">@cre8ive_collins</span>
-              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a className="contact-channel" href={profile.socials.linkedIn} target="_blank" rel="noreferrer">
-              <span className="contact-channel-label">Professional network</span>
-              <strong>LinkedIn</strong>
-              <span className="contact-channel-note">Connect professionally</span>
-              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a className="contact-channel" href={profile.socials.github} target="_blank" rel="noreferrer">
-              <span className="contact-channel-label">Code</span>
-              <strong>GitHub</strong>
-              <span className="contact-channel-note">Explore my repositories</span>
-              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
-            </a>
+        <div className="shell contact-legacy">
+          <p className="section-label">Contact</p>
+          <h2>Reach out to me.</h2>
+          <p className="contact-lead">Interested in working together? Wherever you are with your idea or product, I’ll be happy to hear about it.</p>
+          <a className="contact-mail" href={`mailto:${profile.email}`}>
+            <span>Email me</span>
+            <strong>{profile.email}</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <div className="contact-socials">
+            <p>Connect with me</p>
+            <div className="social-icon-row">
+              <a className="social-icon" href={profile.socials.twitter} target="_blank" rel="noreferrer" aria-label="X / Twitter">
+                <span className="social-icon-mark icon-3d brand-icon brand-twitter" aria-hidden="true" />
+                <span className="social-icon-label">Twitter</span>
+              </a>
+              <a className="social-icon" href={profile.socials.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                <span className="social-icon-mark icon-3d brand-icon brand-whatsapp" aria-hidden="true" />
+                <span className="social-icon-label">WhatsApp</span>
+              </a>
+              <a className="social-icon" href={profile.socials.linkedIn} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <span className="social-icon-mark icon-3d brand-icon brand-linkedin" aria-hidden="true" />
+                <span className="social-icon-label">LinkedIn</span>
+              </a>
+              <a className="social-icon" href={profile.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+                <span className="social-icon-mark icon-3d brand-icon brand-github" aria-hidden="true" />
+                <span className="social-icon-label">GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

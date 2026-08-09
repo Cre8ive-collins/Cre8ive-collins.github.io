@@ -900,6 +900,8 @@ Primary actions:
 * GitHub
 * Download CV
 
+Use the social-icon row and animated 3D hover treatment from the previous portfolio, adapted to the current blue-and-black palette. Respect reduced-motion preferences.
+
 Do not include a complex contact form unless specifically needed.
 
 A simple mailto interaction is acceptable.
