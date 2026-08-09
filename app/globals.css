@@ -118,13 +118,15 @@ button, summary { font: inherit; }
 }
 .hero h1 {
   margin: 24px 0 28px;
-  min-height: 1.75em;
+  min-height: 2em;
   font-size: clamp(2.7rem, 7vw, 6.5rem);
   font-weight: 720;
   line-height: 0.92;
   letter-spacing: -0.075em;
 }
-.rotating-role { color: var(--accent-bright); }
+.rotating-role, .role-line { display: block; }
+.role-line-primary { color: var(--text); }
+.role-line-accent { color: var(--accent-bright); }
 .typing-cursor {
   display: inline-block;
   width: 0.07em;

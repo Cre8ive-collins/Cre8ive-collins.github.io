@@ -49,11 +49,22 @@ export function RotatingRole() {
     return () => window.clearTimeout(timer);
   }, [displayedRole, isDeleting, roleIndex]);
 
+  const [firstLine = "", ...remainingWords] = displayedRole.split(" ");
+  const secondLine = remainingWords.join(" ");
+  const isTypingSecondLine = displayedRole.includes(" ");
+
   return (
     <>
       <span className="sr-only">Product Engineer, Fullstack Engineer, Mobile Developer, Software Engineer</span>
       <span className="rotating-role" aria-hidden="true">
-        {displayedRole}<span className="typing-cursor" />
+        <span className="role-line role-line-primary">
+          {firstLine || "\u00a0"}
+          {!isTypingSecondLine && <span className="typing-cursor" />}
+        </span>
+        <span className="role-line role-line-accent">
+          {secondLine || "\u00a0"}
+          {isTypingSecondLine && <span className="typing-cursor" />}
+        </span>
       </span>
     </>
   );
