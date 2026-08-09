@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   description:
     "Product Engineer with 6+ years of experience building web, mobile and API-driven products, including 4+ years in fintech and digital banking.",
   alternates: { canonical: "/" },
-  icons: { icon: "/favicon.svg" },
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "1024x1024" }],
+    apple: [{ url: "/favicon.png", type: "image/png", sizes: "1024x1024" }],
+  },
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
