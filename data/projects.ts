@@ -267,6 +267,8 @@ export const projects: Project[] = [
       "International user experience",
       "HR technology",
     ],
+    heroImage: "/images/projects/1840-gtc/welcome-background.png",
+    imageAlt: "1840 Global Talent Cloud international workforce map",
     sections: [
       {
         title: "Overview",

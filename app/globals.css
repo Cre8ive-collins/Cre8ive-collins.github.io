@@ -149,8 +149,16 @@ button, summary { font: inherit; }
 .scroll-note span { color: var(--accent); }
 
 .section { padding-block: 120px; }
-.section-heading { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 40px; align-items: start; margin-bottom: 80px; }
-.section-heading h2, .about-copy h2, .fintech-copy h2, .contact-layout h2 {
+.section-heading { max-width: 880px; margin-bottom: 72px; padding-left: 26px; border-left: 3px solid var(--accent); }
+.section-heading .section-label { margin: 0 0 18px; color: #93c5fd; }
+.section-heading h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2.3rem, 4vw, 3.65rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+  font-weight: 680;
+}
+.about-copy h2, .fintech-copy h2, .contact-layout h2 {
   margin: -8px 0 24px;
   font-size: clamp(2.5rem, 4.8vw, 4.3rem);
   line-height: 0.96;
@@ -317,8 +325,9 @@ button, summary { font: inherit; }
   .hero-copy { font-size: 1.06rem; }
   .scroll-note { bottom: 24px; }
   .section { padding-block: 88px; }
-  .section-heading { grid-template-columns: 1fr; gap: 46px; margin-bottom: 54px; }
-  .section-heading h2, .about-copy h2 { font-size: clamp(2.5rem, 12vw, 4rem); }
+  .section-heading { margin-bottom: 54px; padding-left: 18px; }
+  .section-heading h2 { font-size: clamp(2.25rem, 11vw, 3.35rem); }
+  .about-copy h2 { font-size: clamp(2.5rem, 12vw, 4rem); }
   .project-card { min-height: 0; }
   .project-list { grid-template-columns: 1fr; }
   .project-content { padding: 28px 24px 36px; }

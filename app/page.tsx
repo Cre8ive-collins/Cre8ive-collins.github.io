@@ -49,7 +49,7 @@ export default function Home() {
         <div className="section-heading">
           <p className="section-label">Featured products</p>
           <div>
-            <h2>Products, not<br />just projects.</h2>
+            <h2>Products, not just projects.</h2>
             <p>Selected work across personal products, SaaS, marketplaces and mobile applications.</p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
       <section className="section shell" id="approach">
         <div className="section-heading compact-heading">
           <p className="section-label">Product process</p>
-          <div><h2>From ambiguity<br />to production.</h2></div>
+          <div><h2>From ambiguity to production.</h2></div>
         </div>
         <ol className="process-grid">
           {process.map(([number, title, body]) => (
@@ -92,7 +92,7 @@ export default function Home() {
       <section className="section shell" id="experience">
         <div className="section-heading compact-heading">
           <p className="section-label">Professional experience</p>
-          <div><h2>Where I’ve<br />built.</h2></div>
+          <div><h2>Where I’ve built.</h2></div>
         </div>
         <div className="experience-list">
           {experience.map((item) => (
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="shell">
           <div className="section-heading compact-heading">
             <p className="section-label">Technical capabilities</p>
-            <div><h2>Tools follow<br />the problem.</h2><p>Technology supports the product story. It doesn’t replace it.</p></div>
+            <div><h2>Tools follow the problem.</h2><p>Technology supports the product story. It doesn’t replace it.</p></div>
           </div>
           <div className="toolkit-grid">
             {toolkit.map((group) => (
