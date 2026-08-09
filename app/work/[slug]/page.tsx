@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { profile } from "@/data/profile";
 import { getProject, projects } from "@/data/projects";
 
 type ProjectPageProps = { params: Promise<{ slug: string }> };
@@ -14,14 +15,26 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
+  const image = project.heroImage ?? "/og.png";
   return {
     title: project.name,
     description: project.shortDescription,
     alternates: { canonical: `/work/${project.slug}` },
     openGraph: {
+      type: "website",
       title: `${project.name} — Collins Wilson`,
       description: project.shortDescription,
       url: `/work/${project.slug}`,
+      siteName: "Collins Wilson",
+      locale: "en_NG",
+      images: [{ url: image, alt: project.imageAlt ?? `${project.name} project by Collins Wilson` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.name} — Collins Wilson`,
+      description: project.shortDescription,
+      creator: "@cre8ive_collins",
+      images: [image],
     },
   };
 }
@@ -33,9 +46,63 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const currentIndex = projects.findIndex((item) => item.slug === project.slug);
   const nextProject = projects[(currentIndex + 1) % projects.length];
+  const projectUrl = `${profile.siteUrl}/work/${project.slug}`;
+  const projectSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": `${projectUrl}#project`,
+        name: project.name,
+        url: projectUrl,
+        description: project.shortDescription,
+        ...(project.heroImage
+          ? { image: new URL(project.heroImage, profile.siteUrl).toString() }
+          : {}),
+        ...(project.builtSolo
+          ? {
+              creator: {
+                "@type": "Person",
+                "@id": `${profile.siteUrl}/#person`,
+                name: profile.name,
+              },
+            }
+          : {}),
+        contributor: {
+          "@type": "Person",
+          "@id": `${profile.siteUrl}/#person`,
+          name: profile.name,
+          jobTitle: project.role,
+        },
+        keywords: [...project.categories, ...project.technologies].join(", "),
+        ...(project.externalUrl ? { sameAs: project.externalUrl } : {}),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: profile.siteUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: project.name,
+            item: projectUrl,
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <main id="main-content" className="case-study">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema).replace(/</g, "\\u003c") }}
+      />
       <section className="case-hero shell">
         <Link className="back-link" href="/#work">← All work</Link>
         <div className="case-heading">
