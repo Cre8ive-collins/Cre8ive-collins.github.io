@@ -40,7 +40,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     name: profile.name,
     jobTitle: profile.title,
     url: profile.siteUrl,
-    sameAs: [profile.socials.linkedIn, profile.socials.github],
+    sameAs: [profile.socials.linkedIn, profile.socials.github, profile.socials.twitter],
   };
 
   return (

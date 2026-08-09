@@ -120,23 +120,43 @@ export default function Home() {
       </section>
 
       <section className="contact-section" id="contact">
-        <div className="shell contact-layout">
-          <div className="contact-intro">
+        <div className="shell contact-shell">
+          <div className="contact-heading">
             <p className="section-label">Contact</p>
-            <h2>Have a product<br /><em>worth building?</em></h2>
-            <p>If you’re working through a product idea, a difficult engineering problem or the next stage of an existing platform, let’s talk.</p>
+            <h2>Let’s build something useful.</h2>
+            <p>If you’re working through a product idea, a difficult engineering problem or the next stage of an existing platform, choose the channel that works best for you.</p>
           </div>
-          <div className="contact-card">
-            <p>Start a conversation</p>
-            <a className="contact-email" href={`mailto:${profile.email}`}>
-              <span>Email me</span>
+          <div className="contact-grid">
+            <a className="contact-channel contact-channel-primary" href={`mailto:${profile.email}`}>
+              <span className="contact-channel-label">Primary · Email</span>
               <strong>{profile.email}</strong>
-              <span aria-hidden="true">↗</span>
+              <span className="contact-channel-note">Tell me what you’re building</span>
+              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
             </a>
-            <div className="contact-links">
-              <a href={profile.socials.linkedIn} target="_blank" rel="noreferrer">LinkedIn ↗</a>
-              <a href={profile.socials.github} target="_blank" rel="noreferrer">GitHub ↗</a>
-            </div>
+            <a className="contact-channel" href={profile.socials.whatsapp} target="_blank" rel="noreferrer">
+              <span className="contact-channel-label">Direct message</span>
+              <strong>WhatsApp</strong>
+              <span className="contact-channel-note">Start a conversation</span>
+              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a className="contact-channel" href={profile.socials.twitter} target="_blank" rel="noreferrer">
+              <span className="contact-channel-label">Social</span>
+              <strong>X / Twitter</strong>
+              <span className="contact-channel-note">@cre8ive_collins</span>
+              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a className="contact-channel" href={profile.socials.linkedIn} target="_blank" rel="noreferrer">
+              <span className="contact-channel-label">Professional network</span>
+              <strong>LinkedIn</strong>
+              <span className="contact-channel-note">Connect professionally</span>
+              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a className="contact-channel" href={profile.socials.github} target="_blank" rel="noreferrer">
+              <span className="contact-channel-label">Code</span>
+              <strong>GitHub</strong>
+              <span className="contact-channel-note">Explore my repositories</span>
+              <span className="contact-channel-arrow" aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </section>

@@ -9,6 +9,8 @@ export const profile = {
   socials: {
     linkedIn: "https://www.linkedin.com/in/cre8ivecollins/",
     github: "https://github.com/Cre8ive-collins",
+    twitter: "https://twitter.com/cre8ive_collins",
+    whatsapp: "https://wa.me/2349096849272",
   },
 } as const;
 

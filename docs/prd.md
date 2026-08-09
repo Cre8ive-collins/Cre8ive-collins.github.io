@@ -894,6 +894,8 @@ Supporting copy:
 Primary actions:
 
 * Email
+* WhatsApp
+* Twitter / X
 * LinkedIn
 * GitHub
 * Download CV
