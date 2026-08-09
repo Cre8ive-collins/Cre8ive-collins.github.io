@@ -294,7 +294,7 @@ Focus on:
 
 ## Platform
 
-iOS
+iOS and Android
 
 ## External CTA
 
@@ -349,7 +349,7 @@ Do not claim user counts, revenue, downloads, ratings, or other metrics unless s
 
 ## Role
 
-**Solo Product Engineer**
+**Product Engineer**
 
 ## Status
 
@@ -359,15 +359,15 @@ Live or historical status should be stored in configuration and updated based on
 
 This project should strongly emphasize:
 
-> Designed and engineered independently from end to end.
+> Product engineering across the product experience and technical implementation.
 
 Suggested description:
 
-> A professional invoicing product I designed and built independently, owning both the product experience and technical implementation.
+> A professional invoicing product I designed and engineered, working across the product experience and technical implementation.
 
 This project exists to demonstrate:
 
-* Independent engineering ownership
+* Product engineering ownership
 * Product decision-making
 * Architecture
 * UI implementation
@@ -375,17 +375,7 @@ This project exists to demonstrate:
 * Deployment
 * Production maintenance
 
-The case study should distinguish this from team projects.
-
-Include a visual label such as:
-
-**BUILT SOLO**
-
-or:
-
-**END-TO-END OWNERSHIP**
-
-Do not make the label overly promotional.
+Use the role label **Product Engineer**. Do not describe the work as a solo build.
 
 ---
 
@@ -542,6 +532,74 @@ Case study sections can explicitly distinguish:
 * Current build
 * Architecture
 * Planned capabilities
+
+---
+
+# 15A. Featured Project: 1840 Global Talent Cloud
+
+## Product Name
+
+**1840GTC / Global Talent Cloud**
+
+## Role
+
+**Frontend Engineer**
+
+## Status
+
+**Production / Professional Work**
+
+## Product Category
+
+HR Tech / Global Workforce Platform
+
+## Positioning
+
+1840 Global Talent Cloud should be included as the sixth featured project to demonstrate professional frontend product engineering experience on an international workforce platform.
+
+The Global Talent Cloud is part of 1840 & Company's global workforce ecosystem, designed to connect professionals with remote opportunities and support global talent sourcing and workforce operations.
+
+Suggested description:
+
+> Frontend engineering for a global talent platform connecting professionals with remote opportunities across international markets.
+
+## Collins' Role
+
+Collins worked on the frontend engineering of the Global Talent Cloud.
+
+The portfolio should focus specifically on his frontend contribution and must not imply that he built the entire platform or owned backend or infrastructure systems unless additional information is supplied.
+
+The verified portfolio claim at this stage is:
+
+> Worked on the frontend engineering of 1840 Global Talent Cloud.
+
+## Portfolio Purpose
+
+1840 Global Talent Cloud demonstrates:
+
+* Professional product engineering experience
+* Frontend engineering on a production platform
+* Experience building for an international user base
+* HR Tech and workforce technology domain exposure
+* Experience contributing to a larger product rather than only independently owned products
+
+## Future Case Study Detail
+
+Once more implementation details are available, the case study may document verified information about:
+
+* The parts of the product Collins worked on
+* Significant frontend features he implemented
+* Frontend architecture and technical decisions
+* API integrations
+* State and data management
+* Responsive behaviour
+* Authentication or onboarding flows where applicable
+* Technical challenges solved
+* Team collaboration and delivery process
+
+Do not invent these details before they are supplied.
+
+Do not claim that Collins created 1840GTC, built the full product, owned its backend, architected the complete platform, was responsible for company-wide infrastructure, or built features that have not been explicitly confirmed.
 
 ---
 
@@ -1419,7 +1477,7 @@ Can be presented as live.
 
 ## ProInvoice
 
-Can be described as built independently by Collins.
+Use the Product Engineer role. Do not describe the project as a solo build.
 
 ## Book With FIG
 
@@ -1489,11 +1547,12 @@ Footer
 
 Recommended initial ordering:
 
-1. FundzIQ
+1. FundzIQ: Money Planner
 2. ProInvoice
 3. Kouture Konnect
 4. Book With FIG
 5. WebLaunchHub
+6. 1840 Global Talent Cloud
 
 Sterling Bank should primarily appear under:
 
@@ -1822,10 +1881,11 @@ Version 1 is considered complete when:
 * 4+ years fintech experience is visible.
 * Web, Mobile and APIs are visible in the primary positioning.
 * FundzIQ is represented as a live App Store product.
-* ProInvoice clearly communicates solo ownership.
+* ProInvoice is positioned with the Product Engineer role and is not described as a solo build.
 * Kouture Konnect is represented as live.
 * Book With FIG is represented accurately as historical.
 * WebLaunchHub is represented as in development.
+* 1840 Global Talent Cloud is represented as production professional work with Collins' role limited to Frontend Engineer.
 * IQ StayOS does not appear.
 * Sterling Bank supports the fintech positioning without depending on international brand recognition.
 * Selected projects have individual case-study support.

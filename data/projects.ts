@@ -28,7 +28,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "fundziq",
-    name: "FundzIQ",
+    name: "FundzIQ: Money Planner",
     eyebrow: "Money planner · iOS + Android",
     shortDescription:
       "A personal money-planning app that helps people organise recurring financial commitments and understand their monthly spending.",
@@ -75,13 +75,12 @@ export const projects: Project[] = [
     name: "ProInvoice",
     eyebrow: "Invoicing · SaaS",
     shortDescription:
-      "A professional invoicing product I designed and engineered independently, owning the product experience and technical implementation.",
-    role: "Solo Product Engineer",
+      "A professional invoicing product I designed and engineered, working across the product experience and technical implementation.",
+    role: "Product Engineer",
     status: "live",
     statusLabel: "Live product",
     categories: ["SaaS", "Business tools"],
     featured: true,
-    builtSolo: true,
     externalUrl: "https://proinvoice.co/",
     externalLabel: "Visit live product",
     technologies: ["React", "Node.js", "APIs", "Cloud deployment"],
@@ -105,7 +104,7 @@ export const projects: Project[] = [
       },
       {
         title: "My role",
-        body: "I designed and engineered the product independently from end to end. That included shaping the scope, designing the user journey, building the interface and application logic, integrating the supporting systems and deploying the product.",
+        body: "I worked as the Product Engineer across the product scope, user journey, interface and application logic, supporting integrations and deployment.",
       },
       {
         title: "Engineering decisions",
@@ -113,7 +112,7 @@ export const projects: Project[] = [
       },
       {
         title: "Outcome",
-        body: "The live product demonstrates independent ownership across product definition, interface engineering, backend integration and production delivery.",
+        body: "The live product demonstrates product engineering work across product definition, interface engineering, backend integration and production delivery.",
       },
     ],
   },
@@ -247,6 +246,47 @@ export const projects: Project[] = [
       {
         title: "Planned direction",
         body: "The broader direction includes commerce, payments and carefully scoped AI-assisted workflows. These are product plans, not claims about currently shipped functionality.",
+      },
+    ],
+  },
+  {
+    slug: "1840-global-talent-cloud",
+    name: "1840 Global Talent Cloud",
+    eyebrow: "HR Tech · Global workforce",
+    shortDescription:
+      "Frontend engineering for a global talent platform connecting professionals with remote opportunities across international markets.",
+    role: "Frontend Engineer",
+    status: "live",
+    statusLabel: "Production · Professional work",
+    categories: ["HR Tech", "Global workforce platform"],
+    featured: true,
+    technologies: [],
+    capabilities: [
+      "Frontend engineering",
+      "Production product contribution",
+      "International user experience",
+      "HR technology",
+    ],
+    sections: [
+      {
+        title: "Overview",
+        body: "1840 Global Talent Cloud is part of 1840 & Company’s global workforce ecosystem, designed to connect professionals with remote opportunities and support global talent sourcing and workforce operations.",
+      },
+      {
+        title: "The product",
+        body: "The platform serves an international workforce context, bringing talent-facing product experiences into a production HR technology environment.",
+      },
+      {
+        title: "My role",
+        body: "I worked on the frontend engineering of 1840 Global Talent Cloud. This was a contribution to a larger professional product and does not imply ownership of the full platform, backend or infrastructure.",
+      },
+      {
+        title: "Frontend contribution",
+        body: "My verified portfolio claim at this stage is frontend engineering on the production platform. Specific features, architecture decisions and implementation details will be documented when they can be confirmed.",
+      },
+      {
+        title: "Portfolio context",
+        body: "The work demonstrates professional frontend product engineering experience on an international HR technology platform and experience contributing within a larger product environment.",
       },
     ],
   },

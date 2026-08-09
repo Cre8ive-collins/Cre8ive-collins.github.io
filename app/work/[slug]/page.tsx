@@ -74,8 +74,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           ))}
         </div>
         <aside className="case-sidebar">
-          <div><p>Capabilities</p><ul>{project.capabilities.map((item) => <li key={item}>{item}</li>)}</ul></div>
-          <div><p>Stack</p><ul>{project.technologies.map((item) => <li key={item}>{item}</li>)}</ul></div>
+          {project.capabilities.length > 0 && (
+            <div><p>Capabilities</p><ul>{project.capabilities.map((item) => <li key={item}>{item}</li>)}</ul></div>
+          )}
+          {project.technologies.length > 0 && (
+            <div><p>Stack</p><ul>{project.technologies.map((item) => <li key={item}>{item}</li>)}</ul></div>
+          )}
         </aside>
       </section>
 

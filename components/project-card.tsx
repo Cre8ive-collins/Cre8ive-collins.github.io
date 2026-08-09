@@ -20,11 +20,13 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         <h3>{project.name}</h3>
         <p className="project-role">{project.role}</p>
         <p className="project-description">{project.shortDescription}</p>
-        <ul className="tag-list" aria-label={`${project.name} technologies`}>
-          {project.technologies.slice(0, 4).map((technology) => (
-            <li key={technology}>{technology}</li>
-          ))}
-        </ul>
+        {project.technologies.length > 0 && (
+          <ul className="tag-list" aria-label={`${project.name} technologies`}>
+            {project.technologies.slice(0, 4).map((technology) => (
+              <li key={technology}>{technology}</li>
+            ))}
+          </ul>
+        )}
         <div className="project-actions">
           <Link className="text-link" href={`/work/${project.slug}`}>
             Read case study <span aria-hidden="true">→</span>
