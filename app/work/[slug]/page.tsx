@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { SectionLink } from "@/components/section-link";
 import { profile } from "@/data/profile";
 import { getProject, projects } from "@/data/projects";
 
@@ -104,7 +105,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema).replace(/</g, "\\u003c") }}
       />
       <section className="case-hero shell">
-        <Link className="back-link" href="/#work">← All work</Link>
+        <SectionLink className="back-link" href="/#work" sectionId="work">← All work</SectionLink>
         <div className="case-heading">
           <div>
             <p className="eyebrow">{project.eyebrow}</p>
