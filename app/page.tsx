@@ -16,9 +16,8 @@ export default function Home() {
   return (
     <main id="main-content">
       <section className="hero shell" id="home">
-        <div className="hero-grid" aria-hidden="true" />
         <div className="hero-content">
-          <p className="eyebrow hero-eyebrow"><span className="availability-dot" /> Collins Wilson · Lagos / Available worldwide</p>
+          <p className="eyebrow hero-eyebrow"><span className="availability-dot" /> Collins Wilson · Available for global opportunities</p>
           <h1>Product<br /><span>Engineer.</span></h1>
           <p className="hero-copy">
             I build digital products from idea to production — across web, mobile, APIs, backend systems and third-party integrations.
@@ -28,9 +27,6 @@ export default function Home() {
             <a className="button button-primary" href="#work">View my work <span aria-hidden="true">↓</span></a>
             <a className="button button-secondary" href="#about">About me</a>
           </div>
-        </div>
-        <div className="hero-rail" aria-hidden="true">
-          <span>Product thinking</span><span>Web</span><span>Mobile</span><span>APIs</span><span>Production</span>
         </div>
         <p className="scroll-note" aria-hidden="true">Scroll to explore <span>↓</span></p>
       </section>
@@ -112,7 +108,6 @@ export default function Home() {
       <section className="section shell about-section" id="about">
         <div className="about-image-wrap">
           <img src="/images/profile/collins-wilson.jpg" alt="Collins Wilson" loading="lazy" />
-          <span>Based in Lagos · Working globally</span>
         </div>
         <div className="about-copy">
           <p className="section-number">06 / About</p>

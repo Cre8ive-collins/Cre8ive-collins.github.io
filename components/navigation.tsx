@@ -5,10 +5,6 @@ export function Navigation() {
   return (
     <header className="site-header">
       <nav className="navigation shell" aria-label="Primary navigation">
-        <Link className="wordmark" href="/#home" aria-label="Collins Wilson, home">
-          {profile.initials}<span aria-hidden="true">.</span>
-        </Link>
-
         <div className="desktop-nav">
           {navigation.map((item) => (
             <Link key={item.href} href={item.href}>

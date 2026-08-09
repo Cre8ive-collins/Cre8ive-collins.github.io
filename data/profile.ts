@@ -1,10 +1,8 @@
 export const profile = {
   name: "Collins Wilson",
-  initials: "CW",
   title: "Product Engineer",
   yearsEngineering: "6+",
   yearsFintech: "4+",
-  location: "Lagos, Nigeria",
   email: "wilsoncollins44@yahoo.com",
   siteUrl: "https://cre8ive-collins.github.io",
   cvUrl: "/files/collins-wilson-cv.pdf",

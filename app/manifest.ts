@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Product Engineer building across web, mobile and APIs.",
     start_url: "/",
     display: "standalone",
-    background_color: "#090909",
-    theme_color: "#090909",
+    background_color: "#06080d",
+    theme_color: "#06080d",
     icons: [{ src: "/favicon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }

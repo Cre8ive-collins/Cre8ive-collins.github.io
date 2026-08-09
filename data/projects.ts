@@ -29,12 +29,12 @@ export const projects: Project[] = [
   {
     slug: "fundziq",
     name: "FundzIQ",
-    eyebrow: "Money planner · iOS",
+    eyebrow: "Money planner · iOS + Android",
     shortDescription:
       "A personal money-planning app that helps people organise recurring financial commitments and understand their monthly spending.",
     role: "Creator / Product Engineer",
     status: "live",
-    statusLabel: "Live on iOS",
+    statusLabel: "Available on iOS & Android",
     categories: ["Fintech", "Mobile"],
     featured: true,
     builtSolo: true,
@@ -58,7 +58,7 @@ export const projects: Project[] = [
       },
       {
         title: "My role",
-        body: "I own the complete product journey: defining the problem, shaping the experience, making the architecture decisions, building the iOS application, preparing its privacy requirements and taking it through production release.",
+        body: "I own the complete product journey: defining the problem, shaping the experience, making the architecture decisions, building the mobile application, preparing its privacy requirements and taking it through production release on iOS and Android.",
       },
       {
         title: "Engineering decisions",
@@ -66,7 +66,7 @@ export const projects: Project[] = [
       },
       {
         title: "Outcome",
-        body: "FundzIQ shipped as a production iOS product and remains the clearest demonstration of my ability to take an idea through product decisions, engineering and release.",
+        body: "FundzIQ shipped as a production mobile product on iOS and Android and remains the clearest demonstration of my ability to take an idea through product decisions, engineering and release.",
       },
     ],
   },
