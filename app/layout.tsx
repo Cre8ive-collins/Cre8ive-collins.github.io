@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { HashNavigationCleanup } from "@/components/hash-navigation-cleanup";
 import { profile } from "@/data/profile";
 import "./globals.css";
 
@@ -132,6 +133,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body>
+        <HashNavigationCleanup />
         <a className="skip-link" href="#main-content">Skip to content</a>
         <Navigation />
         {children}

@@ -26,6 +26,8 @@
 
 html { scroll-behavior: auto; background: var(--background); }
 
+section[id], main[id] { scroll-margin-top: 76px; }
+
 body {
   margin: 0;
   background: var(--background);

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { navigation, profile } from "@/data/profile";
+import { SectionLink } from "@/components/section-link";
 
 export function Navigation() {
   return (
@@ -7,9 +7,9 @@ export function Navigation() {
       <nav className="navigation shell" aria-label="Primary navigation">
         <div className="desktop-nav">
           {navigation.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <SectionLink key={item.href} href={item.href} sectionId={item.href.slice(2)}>
               {item.label}
-            </Link>
+            </SectionLink>
           ))}
         </div>
 
@@ -21,9 +21,9 @@ export function Navigation() {
           <summary aria-label="Open navigation menu">Menu</summary>
           <div className="mobile-menu-panel">
             {navigation.map((item) => (
-              <Link key={item.href} href={item.href}>
+              <SectionLink key={item.href} href={item.href} sectionId={item.href.slice(2)}>
                 {item.label}
-              </Link>
+              </SectionLink>
             ))}
             <a href={profile.cvUrl} target="_blank" rel="noreferrer">
               Download CV ↗

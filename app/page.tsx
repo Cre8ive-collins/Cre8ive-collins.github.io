@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ProjectCard } from "@/components/project-card";
 import { RotatingRole } from "@/components/rotating-role";
+import { SectionLink } from "@/components/section-link";
 import { experience, toolkit } from "@/data/experience";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
@@ -30,8 +31,8 @@ export default function Home() {
           </p>
           <p className="experience-line"><strong>{profile.yearsEngineering} years engineering</strong><span>·</span><strong>{profile.yearsFintech} years fintech</strong><span>·</span> Web · Mobile · APIs</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#work">View my work <span aria-hidden="true">↓</span></a>
-            <a className="button button-secondary" href="#about">About me</a>
+            <SectionLink className="button button-primary" href="#work" sectionId="work">View my work <span aria-hidden="true">↓</span></SectionLink>
+            <SectionLink className="button button-secondary" href="#about" sectionId="about">About me</SectionLink>
           </div>
         </div>
         <p className="scroll-note" aria-hidden="true">Scroll to explore <span>↓</span></p>
