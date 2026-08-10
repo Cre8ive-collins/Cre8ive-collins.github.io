@@ -37,9 +37,13 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
               {project.externalLabel} <span aria-hidden="true">↗</span>
             </a>
           )}
-          {project.storeLinks?.map((storeLink) => (
-            <StoreDownloadLink key={storeLink.url} storeLink={storeLink} />
-          ))}
+          {project.storeLinks && (
+            <div className="project-store-links" aria-label={`${project.name} downloads`}>
+              {project.storeLinks.map((storeLink) => (
+                <StoreDownloadLink key={storeLink.url} storeLink={storeLink} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
