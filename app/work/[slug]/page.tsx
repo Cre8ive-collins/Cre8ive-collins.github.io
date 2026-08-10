@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SectionLink } from "@/components/section-link";
+import { StoreDownloadLink } from "@/components/store-download-link";
 import { profile } from "@/data/profile";
 import { getProject, projects } from "@/data/projects";
 
@@ -48,6 +49,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const currentIndex = projects.findIndex((item) => item.slug === project.slug);
   const nextProject = projects[(currentIndex + 1) % projects.length];
   const projectUrl = `${profile.siteUrl}/work/${project.slug}`;
+  const relatedUrls = [
+    ...(project.externalUrl ? [project.externalUrl] : []),
+    ...(project.storeLinks?.map((storeLink) => storeLink.url) ?? []),
+  ];
   const projectSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -76,7 +81,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           jobTitle: project.role,
         },
         keywords: [...project.categories, ...project.technologies].join(", "),
-        ...(project.externalUrl ? { sameAs: project.externalUrl } : {}),
+        ...(relatedUrls.length > 0 ? { sameAs: relatedUrls } : {}),
       },
       {
         "@type": "BreadcrumbList",
@@ -118,6 +123,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div><span>Status</span><strong>{project.statusLabel}</strong></div>
           <div><span>Category</span><strong>{project.categories.join(" · ")}</strong></div>
           {project.externalUrl && <a href={project.externalUrl} target="_blank" rel="noreferrer">{project.externalLabel} ↗</a>}
+          {project.storeLinks && (
+            <div className="case-store-links" aria-label={`${project.name} downloads`}>
+              {project.storeLinks.map((storeLink) => (
+                <StoreDownloadLink key={storeLink.url} storeLink={storeLink} />
+              ))}
+            </div>
+          )}
         </div>
         <div className="case-visual">
           {project.heroImage ? (

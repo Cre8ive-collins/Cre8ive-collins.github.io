@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import type { Project } from "@/data/projects";
+import { StoreDownloadLink } from "@/components/store-download-link";
 
 const statusClass: Record<Project["status"], string> = {
   live: "status-live",
@@ -36,6 +37,9 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
               {project.externalLabel} <span aria-hidden="true">↗</span>
             </a>
           )}
+          {project.storeLinks?.map((storeLink) => (
+            <StoreDownloadLink key={storeLink.url} storeLink={storeLink} />
+          ))}
         </div>
       </div>
 

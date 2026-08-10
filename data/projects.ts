@@ -5,6 +5,12 @@ export type ProjectSection = {
   body: string;
 };
 
+export type ProjectStoreLink = {
+  label: string;
+  platform: "app-store" | "google-play";
+  url: string;
+};
+
 export type Project = {
   slug: string;
   name: string;
@@ -18,6 +24,7 @@ export type Project = {
   builtSolo?: boolean;
   externalUrl?: string;
   externalLabel?: string;
+  storeLinks?: ProjectStoreLink[];
   technologies: string[];
   capabilities: string[];
   heroImage?: string;
@@ -38,6 +45,18 @@ export const projects: Project[] = [
     categories: ["Fintech", "Mobile"],
     featured: true,
     builtSolo: true,
+    storeLinks: [
+      {
+        label: "Download on Google Play",
+        platform: "google-play",
+        url: "https://play.google.com/store/apps/details?id=ng.techiq.fundziq",
+      },
+      {
+        label: "Download on the App Store",
+        platform: "app-store",
+        url: "https://apps.apple.com/us/app/fundziq-money-planner/id6764693237",
+      },
+    ],
     technologies: ["React Native", "Expo", "TypeScript", "SQLite"],
     capabilities: [
       "Product definition",
