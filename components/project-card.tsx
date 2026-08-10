@@ -36,6 +36,17 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
               {project.externalLabel} <span aria-hidden="true">↗</span>
             </a>
           )}
+          {project.storeLinks?.map((storeLink) => (
+            <a
+              className="text-link muted-link store-download-link"
+              href={storeLink.url}
+              key={storeLink.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {storeLink.label} <span aria-hidden="true">↗</span>
+            </a>
+          ))}
         </div>
       </div>
 
