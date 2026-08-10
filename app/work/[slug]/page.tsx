@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SectionLink } from "@/components/section-link";
+import { StoreDownloadLink } from "@/components/store-download-link";
 import { profile } from "@/data/profile";
 import { getProject, projects } from "@/data/projects";
 
@@ -125,9 +126,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {project.storeLinks && (
             <div className="case-store-links" aria-label={`${project.name} downloads`}>
               {project.storeLinks.map((storeLink) => (
-                <a className="store-download-link" href={storeLink.url} key={storeLink.url} target="_blank" rel="noreferrer">
-                  {storeLink.label} ↗
-                </a>
+                <StoreDownloadLink key={storeLink.url} storeLink={storeLink} />
               ))}
             </div>
           )}

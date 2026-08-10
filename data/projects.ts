@@ -7,6 +7,7 @@ export type ProjectSection = {
 
 export type ProjectStoreLink = {
   label: string;
+  platform: "app-store" | "google-play";
   url: string;
 };
 
@@ -47,10 +48,12 @@ export const projects: Project[] = [
     storeLinks: [
       {
         label: "Download on Google Play",
+        platform: "google-play",
         url: "https://play.google.com/store/apps/details?id=ng.techiq.fundziq",
       },
       {
         label: "Download on the App Store",
+        platform: "app-store",
         url: "https://apps.apple.com/us/app/fundziq-money-planner/id6764693237",
       },
     ],
