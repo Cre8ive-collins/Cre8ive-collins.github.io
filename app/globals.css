@@ -218,7 +218,11 @@ button, summary { font: inherit; }
 .project-description { margin: 0; color: #c2c2bf; font-size: 1rem; line-height: 1.75; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 30px 0 0; padding: 0; list-style: none; }
 .tag-list li { padding: 7px 10px; background: rgba(255,255,255,0.04); color: var(--muted); font-size: 0.68rem; }
-.project-actions { display: flex; flex-wrap: wrap; gap: 22px; margin-top: auto; padding-top: 34px; }
+.project-actions { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 22px; margin-top: auto; padding-top: 34px; }
+.project-store-links { flex: 0 0 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.project-store-links .store-download-link { min-width: 0; width: 100%; padding-inline: 8px; gap: 7px; }
+.project-store-links .store-download-icon { width: 20px; height: 20px; }
+.project-store-links .store-download-copy strong { font-size: 0.78rem; }
 .text-link { display: inline-flex; gap: 14px; align-items: center; padding-bottom: 3px; border-bottom: 1px solid var(--text); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
 .text-link span { color: var(--accent); }
 .text-link:hover { color: var(--accent); border-color: var(--accent); }
@@ -331,7 +335,7 @@ button, summary { font: inherit; }
 .case-meta span { color: var(--dim); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; }
 .case-meta strong { margin-top: 4px; font-size: 0.8rem; font-weight: 600; }
 .case-meta a { align-self: center; color: var(--accent); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
-.case-meta .case-store-links { align-self: center; gap: 8px; }
+.case-meta .case-store-links { flex-direction: row; flex-wrap: wrap; align-self: center; gap: 10px; }
 .case-meta .case-store-links a { align-self: flex-start; text-transform: none; }
 .case-meta .store-download-copy { gap: 3px; }
 .case-meta .store-download-copy small { color: #aeb8c8; font-size: 0.5rem; letter-spacing: 0.08em; }
